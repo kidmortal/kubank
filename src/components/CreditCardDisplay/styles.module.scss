@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  width: fit-content;
   position: relative;
 }
 
@@ -31,10 +31,4 @@
     font-weight: 400;
     font-size: 12px;
   }
-}
-
-.creditCardImage {
-  position: absolute;
-  left: 0;
-  top: 0;
 }

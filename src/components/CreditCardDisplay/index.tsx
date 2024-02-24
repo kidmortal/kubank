@@ -13,11 +13,7 @@ export default function CreditCardDisplay() {
         <span>04/24</span>
       </div>
 
-      <img
-        className={styles.creditCardImage}
-        alt="creditCardImage"
-        src={CreditCard}
-      />
+      <img alt="creditCardImage" src={CreditCard} />
     </div>
   );
 }
