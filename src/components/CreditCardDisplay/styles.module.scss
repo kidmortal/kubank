@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.cardBalanceContainer {
+  position: absolute;
+  z-index: 2;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.cardInfoContainer {
+  position: absolute;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6px;
+
+  strong {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+.creditCardImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
