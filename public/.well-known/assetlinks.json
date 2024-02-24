@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.kidmortal.kubank",
+        "sha256_cert_fingerprints": ["4F:C4:2E:95:A5:A2:FE:1C:3B:2B:A8:19:C3:83:0C:16:97:41:B2:F8:55:8E:04:15:C4:1A:7D:EF:5A:B3:3F:35"]
+      }
+    }]
