@@ -1,24 +1,35 @@
 import styles from "./styles.module.scss";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { HomeIcon } from "../../assets/Home";
+import { BookmarkIcon } from "../../assets/Bookmark";
+import { NotificationIcon } from "../../assets/Notification";
+import { ProfileIcon } from "../../assets/Profile";
 
 export function FloatingBottomMenu() {
+  const location = useLocation();
   return (
     <div className={styles.container}>
       <Link to="/" replace>
-        <img alt="home" src="assets/home.png" />
+        <HomeIcon color={location.pathname === "/" ? "#49baff" : undefined} />
       </Link>
       <Link to="/bookmark" replace>
-        <img alt="bookmark" src="assets/bookmark.png" />
+        <BookmarkIcon
+          color={location.pathname === "/bookmark" ? "#49baff" : undefined}
+        />
       </Link>
       <Link to="/add" replace>
-        <img alt="add" src="assets/add.png" />
+        <img alt="add" src="assets/Add.png" />
       </Link>
       <Link to="/notification" replace>
-        <img alt="notification" src="assets/notification.png" />
+        <NotificationIcon
+          color={location.pathname === "/notification" ? "#49baff" : undefined}
+        />
       </Link>
       <Link to="/profile" replace>
-        <img alt="profile" src="assets/profile.png" />
+        <ProfileIcon
+          color={location.pathname === "/profile" ? "#49baff" : undefined}
+        />
       </Link>
     </div>
   );
