@@ -8,14 +8,21 @@ export default defineConfig({
     VitePWA({
       devOptions: { enabled: true },
       registerType: "autoUpdate",
-      includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
+      includeAssets: [
+        "favicon.png",
+        "apple-touch-icon.png",
+        "mask-icon.svg",
+        "assets/Add.png",
+        "assets/card.png",
+      ],
       manifest: {
-        id: "com.kidmortal.kubank.app",
         name: "Kubank App",
         short_name: "KuBank",
         description: "Kubank app, the best bank for your Ku",
         theme_color: "#000040",
         orientation: "portrait",
+        display: "fullscreen",
+        start_url: "/",
         icons: [
           {
             src: "pwa-144-144.png",
