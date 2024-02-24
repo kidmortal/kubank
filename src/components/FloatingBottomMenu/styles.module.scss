@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #383467;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.125rem 1rem;
+  border-radius: 2rem;
+  font-size: 18px;
+  color: white;
+}
