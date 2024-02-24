@@ -1,5 +1,4 @@
 import styles from "./styles.module.scss";
-import CreditCard from "../../assets/card.png";
 
 export default function CreditCardDisplay() {
   return (
@@ -13,7 +12,7 @@ export default function CreditCardDisplay() {
         <span>04/24</span>
       </div>
 
-      <img alt="creditCardImage" src={CreditCard} />
+      <img alt="creditCardImage" src="assets/card.png" />
     </div>
   );
 }
