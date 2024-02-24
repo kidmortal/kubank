@@ -1,21 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
-    <link rel="mask-icon" href="/mask-icon.svg" color="#FFFFFF">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#000040">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="mask-icon" href="/mask-icon.svg" color="#FFFFFF" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#000040" />
     <title>Kubank App</title>
-    <meta name="description" content="Kubank the best bank for your KU">
+    <meta name="description" content="Kubank the best bank for your KU" />
     <!-- Open Graph meta data -->
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/743086958439563400/1210941806318190734/image.png?ex=65ec6470&is=65d9ef70&hm=84841c2a106f2bf03595286268a041d058ef3564f4a5fddb06c88cd0dab2970a&"  >
-    <meta property="og:title" content="Kubank App"  >
-    <meta property="og:description" content="Kubank the best bank for your KU"  >
+    <meta
+      property="og:image"
+      content="https://cdn.discordapp.com/attachments/743086958439563400/1210941806318190734/image.png?ex=65ec6470&is=65d9ef70&hm=84841c2a106f2bf03595286268a041d058ef3564f4a5fddb06c88cd0dab2970a&"
+    />
+    <meta property="og:title" content="Kubank App" />
+    <meta
+      property="og:description"
+      content="Kubank the best bank for your KU"
+    />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script
+      src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+      defer
+    ></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(function (OneSignal) {
+        OneSignal.init({
+          appId: "9307134d-b2b7-48b8-bcfc-0192c5fb01bf",
+        });
+      });
+    </script>
   </body>
 </html>
