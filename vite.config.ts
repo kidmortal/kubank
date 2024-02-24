@@ -15,7 +15,7 @@ export default defineConfig({
         short_name: "KuBank",
         description: "Kubank app, the best bank for your Ku",
         theme_color: "#000040",
-        orientation: "landscape",
+        orientation: "portrait",
         icons: [
           {
             src: "pwa-144-144.png",
