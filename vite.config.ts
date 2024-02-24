@@ -21,7 +21,6 @@ export default defineConfig({
         description: "Kubank app, the best bank for your Ku",
         theme_color: "#000040",
         orientation: "portrait",
-        display: "fullscreen",
         start_url: "/",
         icons: [
           {
